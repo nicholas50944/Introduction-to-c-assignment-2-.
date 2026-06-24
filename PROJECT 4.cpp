@@ -2,10 +2,10 @@
 
 Algorithm
 	1.	Start
-	2.	Display menu (1�5)
+	2.	Display menu (1–5)
 	3.	Accept user choice
 	4.	Use switch to display component description
-	5.	Display �Invalid selection� for out-of-range input
+	5.	Display “Invalid selection” for out-of-range input
 	6.	Stop
 
  Pseudocode
@@ -25,7 +25,23 @@ BEGIN
     DEFAULT: DISPLAY "Invalid selection."
 END
 
+Flowchart
 
+[START]
+    ↓
+[Display Menu]
+    ↓
+[Input choice]
+    ↓
+[Switch choice] ──→ 1 → [Input V, I] → [P = V×I] → [Display P in W]
+       |                                                      ↓
+       ├──────────→ 2 → [Input V, I] → [R = V/I] → [Display R in Ω]
+       |                                                      ↓
+       ├──────────→ 3 → [Input P, T] → [E = P×T] → [Display E in J]
+       |                                                      ↓
+       └──────────→ default → [Display "Invalid"]
+                                        ↓
+                                      [END]
 C++ Programme
 #include <iostream>
 using namespace std;
